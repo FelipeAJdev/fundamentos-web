@@ -1,0 +1,199 @@
+* {
+    box-sizing: boder-box;
+    padding: 0;
+    margin: 0;
+   }
+  
+   body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: var(--dark-10);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+   }
+  header {
+    background-color: var(--dark-20);
+    border: 1px solid var(--dark-40);
+    width: 100%;
+    height: 15rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 2px 4px var(--dark-40), 0px 4px 8px var(--dark-30); /* Added box-shadow */
+    border-radius: 0 0 10px 10px; /* Added border-radius */
+  }
+  main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+
+  }
+   
+/* Configurando Icone */
+.container-icon-lipelandia {
+  margin: 2px;
+}
+.lipelandia-color-1 {
+  line-height: 51.04px;
+  font-size: 40px;
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--brand-color);
+}
+.lipelandia-color-2 {
+  line-height: 51.04px;
+  font-size: 40px;
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--dark-60);
+}
+
+/* Estilizando Barra de pesquisa */
+.container-search-bar {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  max-width: 100vh;
+  position: relative; /* Adicionado */
+
+}
+
+.container-search-bar input::placeholder {
+  color: var(--dark-50);
+  position: absolute;
+  left: 48px; /* Ajuste a posição conforme necessário */
+  top: 50%; /* Pode ajustar a posição verticalmente se necessário */
+  transform: translateY(-50%);
+  font-size: small;
+
+}
+
+.search-button {
+  background-color: #ffffff00;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: absolute; /* Adicionado */
+  left: 0;
+  
+}
+
+input[type="text"] {
+
+  padding: 10px;
+  font-size: 16px;
+  /* Ajuste a largura conforme necessário */
+  width: 100vh;
+  border-radius: 15px;
+  border: 1px solid var(--dark-40);
+  background-color: var(--dark-20);
+}
+
+.container-post{
+  padding: 2%;
+  display: flex;
+  margin-top: 2rem;
+  width: 50rem;
+  height: auto;
+  border: 2px solid var(--dark-40);
+  border-radius: 10px;
+
+}
+.container-post:hover {
+  border-color: var(--brand-color);
+  box-shadow: 0px 2px 4px var(--brand-color), 0px 4px 8px var(--dark-30); /* Added box-shadow */
+  transition: all 0.3s ease-in-out;
+}
+/* HEADER DO POST */
+.container-post-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -10px;
+}
+
+.material-symbols-outlined {
+  color: var(--brand-color);
+  
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 20
+}
+
+.material-symbols-outlined:hover{ 
+
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 20
+}
+
+
+
+.post-data{
+  color: var(--brand-color);
+  font-size: 14px;
+  
+}
+
+/* Styles for desktop devices */
+@media screen and (min-width: 1024px) {
+  .container-search-bar {
+    max-width: 800px;
+  }
+
+  input[type="text"] {
+    width: 400px;
+  }
+
+  .container-post {
+    width: 800px;
+  }
+}
+
+/* Styles for tablet devices */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container-search-bar {
+    max-width: 600px;
+  }
+
+  input[type="text"] {
+    width: 300px;
+  }
+
+  .container-post {
+    width: 600px;
+  }
+}
+
+/* Styles for mobile devices */
+@media screen and (max-width: 767px) {
+  .container-search-bar {
+    max-width: 400px;
+  }
+
+  input[type="text"] {
+    width: 200px;
+  }
+
+  .container-post {
+    width: 100%;
+  }
+}
+
+/*
+Responsividade
+https://www.hostinger.com.br/tutoriais/criar-site-responsivo-css
+https://www.youtube.com/watch?v=WcGPSeuJDJ0
+https://www.youtube.com/watch?v=zt5W562mYRo
+
+*/
