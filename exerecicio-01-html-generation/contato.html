@@ -3,45 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/config.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/contato.css">
     <title>Receitas da Vózinha - Contato</title>
 </head>
 <body>
     <header>
-        <h1>Receitas da Vózinha</h1>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="jantares.html">Jantares</a></li>
-            <li><a href="refeicoes.html">Refeições</a></li>
-            <li><a href="dicas-de-cozinha.html">Dicas de Cozinha</a></li>
-            <li><a href="sobre-nos.html">Sobre Nós</a></li>
-            <li><a href="compre-nosso-livro.html">Compre Nosso Livro</a></li>
-            <li><a href="contato.html">Contato</a></li> <!-- Nova Página -->
-        </ul>
-    </nav>
-    
-    <section id="section-contato">
-        <h2>Entre em Contato</h2>
-        <p>Estamos felizes em ouvir de você! Preencha o formulário abaixo para entrar em contato conosco.</p>
+        <div class="container-vozinha">
+            <!--  <h1 style="color: white; text-align: center; margin-bottom: 15px;">Receitas Da Vózinha</h1>
+            -->
+        </div>
+        <nav class="container-nav">
+            <ul>
+                
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Refeições</a></li>
+                <li><a href="#">Jantares</a></li>
+                <li><a href="#">Sobremesas</a></li>
+                <li><a href="#dicas-de-cozinha.html">Dicas de Cozinha</a></li>
+                <li><a href="#news">Novidades</a></li>
+                <li><a href="#compre-nosso-livro.html">Compre Nosso Livro</a></li>
+                <li><a href="./contato.html">Contato</a></li> <!-- Nova Página -->                  
+              </ul>
+        </nav>
+    </header> 
+
+        <section class="section-contato" style="height: 100vh;">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2 style="text-align: center; color: rgb(251, 251, 255);">
+                        Envie-nos uma mensagem</h2>
+                    
+                </div>
+                <form class="form-body">
+                    <label for="nome"></label>
+                    <input class="form-control" type="text" id="nome" name="nome" placeholder="Nome: " required>
+                    <label for="email"></label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Email: " required>
+                    <label for="mensagem"></label>
+                    <textarea class="form-control" id="mensagem" placeholder="Mensagem: " style="height: 20%; width: 205px;" id="mensagem" name="mensagem" rows="4" required></textarea>
         
-        <form id="form-contato" action="" >
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-
-            <input id="form-contato-enviar" type="submit" value="Enviar">
-        </form>
-    </section>
-    
+                    <input class="submit-button" id="btnEnviar" type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>    
     <footer>
         <p>&copy; 2024 Receitas da Vózinha. Todos os direitos reservados.</p>
     </footer>
+    <script src="./assets/scripts/script.js"></script>
 </body>
 </html>

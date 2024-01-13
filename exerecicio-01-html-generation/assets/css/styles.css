@@ -1,112 +1,107 @@
 body {
-    display: flex;
-    flex-direction: column;
-    background: -webkit-linear-gradient(to right, #ec6f66, #f3a183); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ec6f66, #f3a183); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #ec6f66, #f3a183);
 }
 
 header {
-    background: -webkit-linear-gradient(to right, #ece9e6, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
-    padding: 20px;
-  }
-.container-vozinha{
-    margin: -30px 0 0 0;
-    background: linear-gradient(to right, #c35b53f6, #c35b53f6);
-    height: 150px;
+  background: linear-gradient(to right,  #ec6f66, #f3a183);
+  padding: 20px;
+}
+
+.container-vozinha {
+  margin: -30px 0 0 0;
+  background: linear-gradient(top to bottom, #c35b53f6, #c35b53f6);
+  height: 80px;
 }
 
 ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style-type: none;
-    margin: -24px 0 0 0;
-    padding: 0 30px 0 30px;
-    overflow: hidden;
-    background: linear-gradient(to right, #c35b53f6, #c35b53f6);
-    border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: -24px 0 0 0;
+  padding: 0 30px 0 30px;
+  overflow: hidden;
+  background: linear-gradient(to right, #c35b53f6, #c35b53f6);
+  border-radius: 30px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #98524df6;
+}
+
+.container-banner,
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.banner img {
+  border-radius: 15px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Estilos específicos para tablets */
+  ul {
+    padding: 0 20px 0 20px;
   }
   
-  li {
-    float: left;
+  .container-banner {
+    min-height: 10vh;
   }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-radius: 30px;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #98524df6;
-  }
-
-/*
-.icon-vozinha {
-    
 }
 
-.container-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(bottom to top, #c35b53f6, #c35b53f6);
+  padding: 20px;
+  text-align: center;
 }
 
-.nav-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: max-content;
-    margin-right: 20px;
-    padding: 15px;
+.card-receita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e79b92;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin: 10px;
 }
 
-.nav-bar li{
-    list-style: none;
-    margin-left: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--text-color);
-    cursor: pointer;
-    line-height: 0.5; 
-      
+section {
+  margin: 7px 0 0 0;
 }
 
-.nav-bar li:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--secondary-color);
-
-}
-*/
-.container-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 20vh;
-    border-radius: 15px;
-    padding: 7px;
-
-}
-  
-.banner{
-    margin-left: 50%;
-    margin-right: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.section-h2 {
+  /* Adicione estilos conforme necessário */
 }
 
-.banner img { 
-    border-radius: 15px;
+p {
+  margin: 0 0 20px;
 }
-

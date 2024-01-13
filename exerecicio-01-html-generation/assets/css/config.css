@@ -1,8 +1,6 @@
 /* Paleta de cores para um site de receita */
 :root {
   --primary-color: #FF6347; /* Vermelho */
-  --secondary-color: #f0a224; /* Amarelo */
-  --accent-color: #4CAF50; /* Verde */
   --background-color: #F5F5F5; /* Cinza claro */
   --text-color: #333333; /* Preto */
 }
@@ -52,7 +50,3 @@ input, button, textarea, select {
   font-size: inherit;
 }
 
-
-
-  
-  
