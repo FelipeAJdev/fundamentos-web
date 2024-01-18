@@ -1,7 +1,7 @@
-let nome = window.Document.getElementById("nome");
-let email = window.Document.getElementById("email");
-let mensagem = window.Document.getElementById("mensagem");
-let btnEnviar = window.Document.getElementById("btnEnviar");
+let nome = document.getElementById("nome");
+let email = document.getElementById("email");
+let mensagem = document.getElementById("mensagem");
+let btnEnviar = document.getElementById("btnEnviar");
 
 btnEnviar.addEventListener("click", function(event){
     event.preventDefault();
