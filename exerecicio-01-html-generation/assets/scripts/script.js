@@ -8,4 +8,4 @@ btnEnviar.addEventListener("click", function(event){
     console.log("Nome: " + nome.value);
     console.log("Email: " + email.value);
     console.log("Mensagem: " + mensagem.value);
-}); 
+});
